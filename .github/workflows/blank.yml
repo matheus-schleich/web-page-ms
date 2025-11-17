@@ -41,5 +41,5 @@ jobs:
           ls -l
           chmod 600 chave.pem
           ssh -oStrictHostKeyChecking=no chave.pem gestor@131.163.81.20 "apt update"; apt install apache2"
-          #scp -i chave.pem gestor@131.163.81.20:/index.html /var/www/html/index.html
+          scp -i chave.pem gestor@131.163.81.20:/index.html /var/www/html/index.html
           ls -l
